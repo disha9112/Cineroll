@@ -1,0 +1,12 @@
+.footer-body {
+  height: 10.6rem;
+}
+
+.footer-icon {
+  margin: 0px 5px;
+}
+
+.footer-icon:hover {
+  transition: 0.2s;
+  cursor: pointer;
+}
