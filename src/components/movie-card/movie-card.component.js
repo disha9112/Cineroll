@@ -7,8 +7,8 @@ function MovieCard() {
   return (
     <Card
       style={{
-        width: "18rem",
-        margin: "10px 15px",
+        minWidth: "15.5rem",
+        margin: "10px 10px",
         backgroundColor: "#212529",
         color: "white",
       }}
@@ -16,8 +16,8 @@ function MovieCard() {
     >
       <Card.Img
         variant="top"
-        style={{ objectFit: "cover", width: "286px", height: "286px" }}
-        src="https://images.unsplash.com/photo-1656203549835-d951ae6f0f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1886&q=80"
+        style={{ objectFit: "cover" }}
+        src="https://images.unsplash.com/photo-1656231735353-fe0d3d182aaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1962&q=80"
       />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>

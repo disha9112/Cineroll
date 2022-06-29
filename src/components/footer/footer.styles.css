@@ -1,5 +1,7 @@
 .footer-body {
-  height: 10.6rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-icon {

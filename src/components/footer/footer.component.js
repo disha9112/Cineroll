@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import "./footer.styles.css";
