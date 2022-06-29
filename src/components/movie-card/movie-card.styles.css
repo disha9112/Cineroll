@@ -1,5 +1,18 @@
 .movie-card-body:hover {
-  cursor: pointer;
   transition: 0.3s;
-  transform: scale(1.01);
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.movie-card-img:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.movie-card-buttons {
+  display: grid;
+}
+
+.movie-card-body:hover .movie-card-buttons {
+  opacity: 1;
 }

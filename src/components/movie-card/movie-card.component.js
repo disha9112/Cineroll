@@ -11,12 +11,11 @@ function MovieCard() {
   const movies = useSelector((state) => state.allMovies.movies);
 
   const movieList = movies.map((movie) => {
-    const { id, original_title, release_date, poster_path } = movie;
+    const { id, poster_path } = movie;
 
     return (
-      <Col>
+      <Col key={id}>
         <Card
-          key={id}
           style={{
             minWidth: "15rem",
             margin: "10px 10px",
@@ -30,12 +29,11 @@ function MovieCard() {
             style={{ objectFit: "cover" }}
             src={`https://image.tmdb.org/t/p/w500${poster_path}`}
             alt="movie poster"
-          />
-          <Card.Body>
-            <Card.Title className="text-truncate">{original_title}</Card.Title>
-            <Card.Text>Release Date: {release_date.slice(0, 4)}</Card.Text>
-            <Button variant="primary">Details</Button>
-          </Card.Body>
+            className="movie-card-img"
+          ></Card.Img>
+          <div className="movie-card-buttons">
+            <Button className="movie-card-button">Details</Button>
+          </div>
         </Card>
       </Col>
     );
