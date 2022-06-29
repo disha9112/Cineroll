@@ -31,9 +31,6 @@ function MovieCard() {
             alt="movie poster"
             className="movie-card-img"
           ></Card.Img>
-          <div className="movie-card-buttons">
-            <Button className="movie-card-button">Details</Button>
-          </div>
         </Card>
       </Col>
     );
