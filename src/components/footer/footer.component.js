@@ -16,9 +16,15 @@ function Footer() {
         <Card.Text>Cineroll All Rights Reserved © 2022</Card.Text>
       </Card.Body>
       <Card.Body>
-        <FaGithub className="footer-icon" size={30} />
-        <FaLinkedin className="footer-icon" size={30} />
-        <FaInstagram className="footer-icon" size={30} />
+        <a href="https://github.com/disha9112/Cineroll">
+          <FaGithub className="footer-icon" size={30} />
+        </a>
+        <a href="https://www.linkedin.com/in/disha9112/">
+          <FaLinkedin className="footer-icon" size={30} />
+        </a>
+        <a href="https://www.instagram.com/_disha291_/">
+          <FaInstagram className="footer-icon" size={30} />
+        </a>
       </Card.Body>
     </Card>
   );
