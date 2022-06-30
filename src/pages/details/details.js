@@ -72,24 +72,26 @@ function Details() {
           }}
         >
           <Card.Body style={{ background: "black" }}>
-            <Card.Title style={{ fontSize: "35px" }}>
+            <Card.Title className="playfair" style={{ fontSize: "35px" }}>
               {original_title}
             </Card.Title>
             <div className="details-body-card-header">
-              <Card.Text>Runtime: {runtime}m </Card.Text>
-              <Card.Text>Release: {release_date}</Card.Text>
-              <Card.Text>Rating ⭐: {vote_average}</Card.Text>
+              <Card.Text className="lato">Runtime: {runtime}m </Card.Text>
+              <Card.Text className="lato">Release: {release_date}</Card.Text>
+              <Card.Text className="lato">Rating ⭐: {vote_average}</Card.Text>
             </div>
             <div className="details-body-card-info">
-              <Card.Text style={{ fontSize: "20px" }}>{overview}</Card.Text>
-              <Card.Text style={{ fontSize: "20px" }}>
+              <Card.Text className="lato" style={{ fontSize: "20px" }}>
+                {overview}
+              </Card.Text>
+              <Card.Text className="lato" style={{ fontSize: "20px" }}>
                 Genres: {genres_string}
               </Card.Text>
-              <Card.Text style={{ fontSize: "20px" }}>
+              <Card.Text className="lato" style={{ fontSize: "20px" }}>
                 Languages: {languages_string}
               </Card.Text>
             </div>
-            <Button variant="primary m-5">Add to Watch List</Button>
+            <Button variant="primary playfair m-5">Add to Watch List</Button>
           </Card.Body>
         </Card>
       </div>

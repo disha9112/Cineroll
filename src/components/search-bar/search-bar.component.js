@@ -1,22 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 function SearchBar() {
-  return (
-    <Form>
-      <Form.Group className="text-center mb-3" controlId="formBasicEmail">
-        <Form.Label
-          style={{ fontSize: "50px", color: "white", marginTop: "20px" }}
-        >
-          Begin typing to search for a desired movie...
-        </Form.Label>
-        <Form.Control type="email" placeholder="Enter movie title" />
-      </Form.Group>
+  const [query, setQuery] = useState("");
 
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
+  function handleQuery(event) {
+    setQuery(event.target.value);
+  }
+
+  return (
+    <Form className="text-center p-5">
+      <Form.Label
+        className="playfair"
+        style={{ fontSize: "40px", color: "white", marginTop: "20px" }}
+      >
+        Begin typing to search for a movie...
+      </Form.Label>
+      <Form.Group
+        className="d-flex justify-content-center mb-3"
+        controlId="formBasicEmail"
+      >
+        <Form.Control
+          className="lato"
+          style={{ width: "75%" }}
+          type="email"
+          placeholder="Enter movie title"
+          value={query}
+          onChange={handleQuery}
+        />
+        <Button variant="primary playfair " type="submit">
+          Submit
+        </Button>
+      </Form.Group>
     </Form>
   );
 }

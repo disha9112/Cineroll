@@ -10,10 +10,12 @@ function Footer() {
       style={{ backgroundColor: "#212529", color: "white" }}
     >
       <Card.Body>
-        <Card.Title>
+        <Card.Title className="playfair" style={{ fontSize: "30px" }}>
           Create a curated roll of your favourite movies, today.
         </Card.Title>
-        <Card.Text>Cineroll All Rights Reserved © 2022</Card.Text>
+        <Card.Text className="lato" style={{ fontSize: "20px" }}>
+          API Credits: TMDB API Logo
+        </Card.Text>
       </Card.Body>
       <Card.Body>
         <a href="https://github.com/disha9112/Cineroll">

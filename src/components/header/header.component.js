@@ -9,11 +9,11 @@ function Header() {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Link className="link" to="/">
-          <Navbar.Brand>Cineroll</Navbar.Brand>
+          <Navbar.Brand className="playfair">Cineroll</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto"></Nav>
+          <Nav className="me-auto lato"></Nav>
           <Nav>
             <Nav.Link as={Link} to="/">
               Home
