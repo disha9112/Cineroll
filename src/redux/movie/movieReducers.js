@@ -3,6 +3,7 @@ import { SET_MOVIES, SELECTED_MOVIE, REMOVE_MOVIE } from "./movieTypes";
 // defining state
 const initialState = {
   movies: [],
+  movie: [],
 };
 
 // defining reducers
