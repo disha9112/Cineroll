@@ -1,7 +1,6 @@
-import axios from "axios";
 import React, { useEffect } from "react";
+import axios from "axios";
 import { Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { setMovies } from "../../redux/movie/movieActions";
 import MovieCard from "../movie-card/movie-card.component";
@@ -26,11 +25,9 @@ function MovieList() {
     fetchMovies();
   }, []);
 
-  console.log("Movies: ", movies);
-
   return (
     <div>
-      <Row s={2} md={3} lg={4} xl={5} className="g-4">
+      <Row s={3} md={4} lg={5} xl={6} className="p-3 text-center">
         <MovieCard />
       </Row>
     </div>

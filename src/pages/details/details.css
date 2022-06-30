@@ -1,0 +1,26 @@
+.details-body {
+  overflow-x: hidden;
+  height: 100vh;
+  background: black;
+}
+
+.details-body-card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.details-body-card-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.details-body-card-info {
+  text-align: left;
+}
+
+@media (max-width: 940px) {
+  .details-body-card {
+    display: block;
+    text-align: center;
+  }
+}

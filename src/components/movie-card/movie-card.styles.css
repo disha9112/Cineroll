@@ -1,4 +1,4 @@
-.movie-card-body:hover {
+.movie-card-img:hover {
   transition: 0.3s;
   cursor: pointer;
   transform: scale(1.02);
