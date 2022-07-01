@@ -5,21 +5,23 @@
 }
 
 .details-body-card {
+  margin: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .details-body-card-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .details-body-card-info {
-  text-align: left;
+  text-align: center;
 }
 
 @media (max-width: 1100px) {
   .details-body-card {
+    margin: auto;
     display: block;
     text-align: center;
   }

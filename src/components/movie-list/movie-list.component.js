@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { Row } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setMovies } from "../../redux/movie/movieActions";
 import MovieCard from "../movie-card/movie-card.component";
 
 function MovieList() {
-  const movies = useSelector((state) => state.allMovies.movies);
   const dispatch = useDispatch();
 
   async function fetchMovies() {
@@ -27,7 +26,7 @@ function MovieList() {
 
   return (
     <div>
-      <Row s={3} md={4} lg={5} xl={6} className="p-3 text-center">
+      <Row s={3} md={4} lg={5} xl={6} className="p-4 mb-5 text-center">
         <MovieCard />
       </Row>
     </div>
