@@ -1,17 +1,17 @@
 import React from "react";
 import Footer from "../../components/footer/footer.component";
 import Header from "../../components/header/header.component";
-import MovieList from "../../components/movie-list/movie-list.component";
-import "./watch-list.css";
+import WatchList from "../../components/watch-list/watch-list.component";
+import "./list.css";
 
-function WatchList() {
+function List() {
   return (
-    <div className="home-body">
+    <div className="list-body">
       <Header />
-      <MovieList />
+      <WatchList />
       <Footer />
     </div>
   );
 }
 
-export default WatchList;
+export default List;

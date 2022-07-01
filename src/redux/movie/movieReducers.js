@@ -1,4 +1,4 @@
-import { SET_MOVIES, SELECTED_MOVIE, REMOVE_MOVIE } from "./movieTypes";
+import { SET_MOVIES, SELECTED_MOVIE } from "./movieTypes";
 
 // defining state
 const initialState = {
@@ -27,9 +27,6 @@ export const selectedMovieReducer = (state = initialState, action) => {
         ...state,
         movie: action.payload,
       };
-
-    case REMOVE_MOVIE:
-      return {};
 
     default:
       return state;

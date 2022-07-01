@@ -5,12 +5,11 @@ import { useParams } from "react-router-dom";
 import Header from "../../components/header/header.component";
 import Footer from "../../components/footer/footer.component";
 import "./details.css";
-import { Image, Card, Button } from "react-bootstrap";
+import { Image, Card, Button, ButtonGroup } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 
 function Details() {
   const { movieId } = useParams();
-  console.log(movieId);
 
   const dispatch = useDispatch();
 
@@ -22,8 +21,6 @@ function Details() {
       .catch((error) => {
         console.log("Error: ", error);
       });
-
-    console.log(response.data);
 
     dispatch(selectedMovie(response.data));
   }
@@ -50,7 +47,11 @@ function Details() {
   return (
     <div>
       {Object.keys(movie).length === 0 ? (
-        <div>Loading...</div>
+        <div className="details-body">
+          <Header />
+          <div className="details-body-card">Loading...</div>
+          <Footer />
+        </div>
       ) : (
         <div className="details-body">
           <Header />
@@ -109,9 +110,10 @@ function Details() {
                     })}
                   </Card.Text>
                 </div>
-                <Button variant="primary playfair m-5">
-                  Add to Watch List
-                </Button>
+                <ButtonGroup variant="justify-content-between">
+                  <Button variant="primary playfair mt-3 mb-5">Add</Button>
+                  <Button variant="primary playfair mt-3 mb-5">Remove</Button>
+                </ButtonGroup>
               </Card.Body>
             </Card>
           </div>

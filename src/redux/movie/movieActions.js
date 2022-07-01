@@ -14,9 +14,3 @@ export const selectedMovie = (movie) => {
     payload: movie,
   };
 };
-
-export const removeMovie = () => {
-  return {
-    type: REMOVE_MOVIE,
-  };
-};
