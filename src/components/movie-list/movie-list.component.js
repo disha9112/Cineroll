@@ -12,7 +12,7 @@ function MovieList() {
 
   async function fetchMovies() {
     const response = await axios
-      .get(`http://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
+      .get(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
       .catch((error) => {
         console.log("Error: ", error);
       });
