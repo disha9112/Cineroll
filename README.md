@@ -4,14 +4,14 @@
 
   <h1 align="center">Cineroll</h1>
 
-  <!-- <p align="center">
-    Create a curated roll of your favourite movies.
-  </p> -->
+  <p align="center">
+    Search for your favourite movies with just a few clicks!
+  </p>
 </div>
 
 </br>
 
-![Cineroll](https://user-images.githubusercontent.com/78133928/176885773-eeb3ba49-f317-49de-9268-57640ec5b548.png)
+![Cineroll](https://user-images.githubusercontent.com/78133928/176890731-7f5a1f74-1870-40da-a4f9-49a4a58aacc6.png)
 
 <!-- HOSTED LINK -->
 

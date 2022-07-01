@@ -12,6 +12,8 @@ import "./details.css";
 import { Image, Card, Button, ButtonGroup } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 function Details() {
   const { movieId } = useParams();
 
@@ -19,9 +21,7 @@ function Details() {
 
   async function fetchMovieDetail(id) {
     const response = await axios
-      .get(
-        `https://api.themoviedb.org/3/movie/${id}?api_key=c878fd5c16d0faa5c21cfe9a3eb3c663`
-      )
+      .get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
       .catch((error) => {
         console.log("Error: ", error);
       });

@@ -5,14 +5,14 @@ import { useDispatch } from "react-redux";
 import { setMovies } from "../../redux/movie/movieActions";
 import MovieCard from "../movie-card/movie-card.component";
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 function MovieList() {
   const dispatch = useDispatch();
 
   async function fetchMovies() {
     const response = await axios
-      .get(
-        "http://api.themoviedb.org/3/movie/popular?api_key=c878fd5c16d0faa5c21cfe9a3eb3c663"
-      )
+      .get(`http://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
       .catch((error) => {
         console.log("Error: ", error);
       });

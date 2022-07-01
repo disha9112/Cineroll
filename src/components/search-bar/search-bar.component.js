@@ -5,6 +5,8 @@ import { setMovies } from "../../redux/movie/movieActions";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 function SearchBar() {
   const dispatch = useDispatch();
   const [query, setQuery] = useState("");
@@ -18,7 +20,7 @@ function SearchBar() {
 
     const response = await axios
       .get(
-        `https://api.themoviedb.org/3/search/movie?api_key=c878fd5c16d0faa5c21cfe9a3eb3c663&query=${query}`
+        `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`
       )
       .catch((error) => {
         console.log("Error: ", error);
