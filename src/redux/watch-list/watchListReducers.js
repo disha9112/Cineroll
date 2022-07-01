@@ -17,7 +17,7 @@ export const allMoviesListReducer = (state = initialState, action) => {
     case SET_LIST:
       return {
         ...state,
-        watchList: action.payload,
+        watchList: state.watchList,
       };
 
     default:
@@ -31,7 +31,7 @@ export const addMovieReducer = (state = initialState, action) => {
       return {
         ...state,
         addedMovie: action.payload,
-        watchList: state.watchList.push(action.payload),
+        watchList: state.watchList.concat(state.addedMovie),
       };
 
     default:

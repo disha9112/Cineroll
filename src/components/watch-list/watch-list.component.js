@@ -1,27 +1,20 @@
 import React, { useEffect } from "react";
-import axios from "axios";
+import { useSelector } from "react-redux";
 import { Row } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import { setMovies } from "../../redux/movie/movieActions";
+import { setList } from "../../redux/watch-list/watchListActions";
 import MovieCard from "../movie-card/movie-card.component";
 
 function WatchList() {
   const dispatch = useDispatch();
+  let watchList = useSelector((state) => state.allListMovies.watchList);
 
-  async function fetchMovies() {
-    const response = await axios
-      .get(
-        "http://api.themoviedb.org/3/movie/popular?api_key=c878fd5c16d0faa5c21cfe9a3eb3c663"
-      )
-      .catch((error) => {
-        console.log("Error: ", error);
-      });
-
-    dispatch(setMovies(response.data.results));
+  async function fetchWatchListMovies() {
+    dispatch(setList(watchList));
   }
 
   useEffect(() => {
-    fetchMovies();
+    fetchWatchListMovies();
   }, []);
 
   return (

@@ -8,16 +8,16 @@ export const setList = (watchList) => {
   };
 };
 
-export const addListMovie = (addedMovie) => {
+export const addListMovie = (movie) => {
   return {
     type: ADD_LIST_MOVIE,
-    payload: addedMovie,
+    payload: movie,
   };
 };
 
-export const removeListMovie = (removedMovie) => {
+export const removeListMovie = (movie) => {
   return {
     type: REMOVE_LIST_MOVIE,
-    payload: removedMovie,
+    payload: movie,
   };
 };

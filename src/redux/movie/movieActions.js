@@ -1,4 +1,4 @@
-import { SET_MOVIES, SELECTED_MOVIE, REMOVE_MOVIE } from "./movieTypes";
+import { SET_MOVIES, SELECTED_MOVIE } from "./movieTypes";
 
 // action creator functions
 export const setMovies = (movies) => {
