@@ -11,13 +11,13 @@
 
 </br>
 
-![Cineroll](https://user-images.githubusercontent.com/78133928/176896617-2098ac72-58c9-4af6-b519-b6521a0ffb72.png)
+![Cineroll](https://user-images.githubusercontent.com/78133928/176901628-c401d02b-6bf9-4b4d-8f2f-4875cf969051.png)
 
 <!-- HOSTED LINK -->
 
 ## Hosted Link
 
-<a href="https://opus-live.netlify.app/" target="_blank">https://opus-live.netlify.app/</a>
+<a href="https://cineroll.netlify.app/" target="_blank">https://cineroll.netlify.app/</a>
 
 <!-- ABOUT THE PROJECT -->
 
