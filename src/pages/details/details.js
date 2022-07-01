@@ -1,15 +1,11 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { selectedMovie } from "../../redux/movie/movieActions";
-import {
-  addListMovie,
-  removeListMovie,
-} from "../../redux/watch-list/watchListActions";
 import { useParams } from "react-router-dom";
 import Header from "../../components/header/header.component";
 import Footer from "../../components/footer/footer.component";
 import "./details.css";
-import { Image, Card, Button, ButtonGroup } from "react-bootstrap";
+import { Image, Card } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
@@ -30,7 +26,6 @@ function Details() {
   }
 
   let movie = useSelector((state) => state.selectedMovie.movie);
-  let listMovie = useSelector((state) => state.selectedMovie.movie);
 
   const {
     poster_path,
@@ -42,14 +37,6 @@ function Details() {
     genres,
     spoken_languages,
   } = movie;
-
-  function addMovieToList() {
-    dispatch(addListMovie(listMovie));
-  }
-
-  function removeMovieFromList() {
-    dispatch(removeListMovie(listMovie));
-  }
 
   useEffect(() => {
     if (movieId) {
@@ -123,20 +110,6 @@ function Details() {
                     })}
                   </Card.Text>
                 </div>
-                <ButtonGroup variant="justify-content-between">
-                  <Button
-                    onClick={() => addMovieToList()}
-                    variant="primary playfair mt-3 mb-5"
-                  >
-                    Add
-                  </Button>
-                  <Button
-                    onClick={() => removeMovieFromList()}
-                    variant="primary playfair mt-3 mb-5"
-                  >
-                    Remove
-                  </Button>
-                </ButtonGroup>
               </Card.Body>
             </Card>
           </div>

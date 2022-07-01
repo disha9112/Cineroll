@@ -9,25 +9,21 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Link className="link" to="/">
-          <img
-            src={logo}
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-          />
-          <Navbar.Brand className="playfair"> Cineroll</Navbar.Brand>
-        </Link>
+        <img
+          src={logo}
+          width="30"
+          height="30"
+          className="d-inline-block m-1 align-top"
+          alt="React Bootstrap logo"
+        />
+        <Navbar.Brand className="playfair">Cineroll</Navbar.Brand>
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto lato"></Nav>
           <Nav>
             <Nav.Link as={Link} to="/">
               Home
-            </Nav.Link>
-            <Nav.Link as={Link} to="/watchlist">
-              Watch List
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

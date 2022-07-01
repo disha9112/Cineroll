@@ -11,7 +11,7 @@
 
 </br>
 
-![Cineroll](https://user-images.githubusercontent.com/78133928/176890731-7f5a1f74-1870-40da-a4f9-49a4a58aacc6.png)
+![Cineroll](https://user-images.githubusercontent.com/78133928/176896617-2098ac72-58c9-4af6-b519-b6521a0ffb72.png)
 
 <!-- HOSTED LINK -->
 
@@ -30,7 +30,7 @@ Cineroll is a movie-listing website, built using React and Redux. Users can chec
 # Features Implemented
 
 - The home page rolls out the top 20 recently popular movies.
-- A search bar allows users to search for the desired movie by inputting the title.
+- A search bar allows users to search for the desired movie by giving the title.
 - To obtain details of a particular movie, users can click on the movie cards.
 
 <!-- BUILT WITH -->
@@ -40,7 +40,6 @@ Cineroll is a movie-listing website, built using React and Redux. Users can chec
 - React.js
 - Redux
 - Bootstrap
-- TMDB API
 
 <!-- GETTING STARTED -->
 
